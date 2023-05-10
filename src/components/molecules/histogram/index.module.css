@@ -1,0 +1,78 @@
+.histogram {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    width: 1000px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.segment {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    width: 15px;
+    background: #007bff;
+}
+
+.frequency {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    font-size: 12px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.plot-area {
+    display: flex;
+    justify-content: center;
+}
+
+.y-axis {
+    display: flex;
+    justify-content: center;
+}
+
+.y-label {
+    display: flex;
+    justify-content: center;
+    writing-mode: tb;
+}
+
+.x-axis {
+    display: flex;
+    justify-content: center;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.number {
+    margin-bottom: 40px;
+}

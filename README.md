@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+This project is composed of various components, including atoms and molecules. These components, as their names suggest, contain the code that is invoked by `App.js` when necessary for rendering the components.
+
+#index.js
+
+In the `index.js` file, the `App.jsx` is called to handle the rendering of content on the screen.
+
+The `App.jsx` file encompasses the main code of the program. It is responsible for fetching and processing the data to be rendered by invoking specific components on the screen when certain actions are performed. After fetching the data, it utilizes the `.then()` function, a promise function, to handle asynchronous function calls and calculate the word frequency for generating a histogram. Additionally, it includes export and clear buttons that perform operations on the rendered data. The buttons within `App.jsx` are responsible for calling the respective components.
+
+#Components
+The components consist of atoms and molecules.
+
+#Atoms
+Atoms are utilized in `App.jsx` to render data on the screen. They include a button that responds to the invocation from the `App.jsx` file. The atom component contains event handlers that handle the fetching and processing of data required for plotting the histogram. 
+
+Additionally, it applies specific CSS styles to its attributes.
+
+
+#Moelcules
+
+Molecules are also used in `App.jsx` to render data on the screen. The molecule component consists of sub-components such as the button-group and the histogram. These sub-components receive props passed by `App.jsx` and contain event handlers for performing certian operations like plotting data in the histogram, generating downloadable files, and clearing the rendered content. 
+
+The molecule component also utilizes specific CSS styles to define its attributes.
+
+
+
+
+
